@@ -43,3 +43,13 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local credentials and personal/offline data
+.env
+.env.*
+!.env.example
+/generated/
+*.db
+*.db-*
+*.sqlite
+.venv/
