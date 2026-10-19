@@ -1,0 +1,47 @@
+{
+  "id": "00000000-0000-4000-8000-000000000001",
+  "state": "completed",
+  "created_at": "2026-10-18T12:00:00Z",
+  "started_at": "2026-10-18T12:00:01Z",
+  "finished_at": "2026-10-18T12:00:02Z",
+  "catalog_version": "synthetic-meal-3-v1",
+  "error_code": null,
+  "result": {
+    "catalog_version": "synthetic-meal-3-v1",
+    "plan": {
+      "recipes": [{
+        "id": "oats-demo", "name": "Технический пример овсяных хлопьев",
+        "servings": 2, "ingredients": [{"product_id": "oats", "grams": 100}],
+        "steps": ["Приготовить хлопья с питьевой водой."], "cooking_minutes": 10
+      }],
+      "days": [
+        {"day": 1, "meals": [{"recipe_id": "oats-demo", "servings": 1}]},
+        {"day": 2, "meals": [{"recipe_id": "oats-demo", "servings": 1}]},
+        {"day": 3, "meals": [{"recipe_id": "oats-demo", "servings": 1}]}
+      ]
+    },
+    "calculation": {
+      "catalog_version": "synthetic-meal-3-v1", "data_status": "demo_unverified",
+      "warning": "Синтетические fixtures MEAL-3, не реальные товары и не проверенные цены или КБЖУ.",
+      "days": [
+        {"day": 1, "meals": [{"recipe_id": "oats-demo", "servings": 1,
+          "nutrition": {"calories_kcal": 185, "protein_g": 6.5, "fat_g": 3.5, "carbs_g": 31}}],
+          "nutrition": {"calories_kcal": 185, "protein_g": 6.5, "fat_g": 3.5, "carbs_g": 31}},
+        {"day": 2, "meals": [{"recipe_id": "oats-demo", "servings": 1,
+          "nutrition": {"calories_kcal": 185, "protein_g": 6.5, "fat_g": 3.5, "carbs_g": 31}}],
+          "nutrition": {"calories_kcal": 185, "protein_g": 6.5, "fat_g": 3.5, "carbs_g": 31}},
+        {"day": 3, "meals": [{"recipe_id": "oats-demo", "servings": 1,
+          "nutrition": {"calories_kcal": 185, "protein_g": 6.5, "fat_g": 3.5, "carbs_g": 31}}],
+          "nutrition": {"calories_kcal": 185, "protein_g": 6.5, "fat_g": 3.5, "carbs_g": 31}}
+      ],
+      "nutrition": {"calories_kcal": 555, "protein_g": 19.5, "fat_g": 10.5, "carbs_g": 93},
+      "shopping_list": [{"product_id": "oats", "name": "Овсяные хлопья", "required_grams": 150,
+        "package_size_g": 500, "packages": 1, "purchased_grams": 500, "remaining_grams": 350,
+        "price": 89.9, "cost": 89.9}],
+      "budget": 200.5, "total_cost": 89.9, "within_budget": true, "budget_remaining": 110.6, "over_budget_by": 0
+    },
+    "warnings": ["Синтетические fixtures MEAL-3, не реальные товары и не проверенные цены или КБЖУ."],
+    "nutrition_tolerance": 0.1,
+    "metadata": {"calls": 1, "duration_seconds": 1.0, "responses": [{"model": "local-test", "usage": null}]}
+  }
+}

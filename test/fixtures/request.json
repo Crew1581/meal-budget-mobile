@@ -1,0 +1,11 @@
+{
+  "days": 3,
+  "budget": "200.5",
+  "daily_targets": {"calories_kcal":"185", "protein_g":"6.5", "fat_g":"3.5", "carbs_g":"31"},
+  "excluded_product_ids": [],
+  "disliked_product_ids": [],
+  "max_cooking_minutes": 20,
+  "meals_per_day": 1,
+  "price_region": "Москва",
+  "wishes": "Технический тест, не рекомендация"
+}
